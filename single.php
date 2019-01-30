@@ -28,7 +28,7 @@ $template_uri = get_template_directory_uri();
                             ?>
                         </span></div></h1>
                     </div>
-                    <h3 class="ac_tele__headLogo single"><a href="<?php echo home_url(); ?>/telework/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/telework_logo.svg" width="200" alt="紀南のテレワーク"></a></h3>
+                    <h3 class="ac_tele__headLogo single"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/telework_logo.svg" width="200" alt="紀南のテレワーク"></a></h3>
                 </div>
             </header>
 
