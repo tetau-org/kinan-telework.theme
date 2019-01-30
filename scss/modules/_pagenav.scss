@@ -1,0 +1,66 @@
+@charset "utf-8";
+@import "../core/mixin";
+@import "../base/_base_setting";
+
+/*-----------------------------------------------
+ __page_nav
+-----------------------------------------------*/
+
+#pagenavi {
+    overflow: hidden;
+    ul.page-numbers {
+        padding-top: 5vw;
+        width: 100%;
+        box-sizing: border-box;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        li {
+            width: 60px;
+            padding: 5px;
+            @include media(979px) {
+                width: 50px;
+            }
+        }
+    }
+    a.page-numbers ,span.page-numbers {
+        display: block;
+        box-sizing: border-box;
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border: 1px solid #ccc;
+        font-size: 13px;
+        text-decoration: none;
+        color: #666;
+        transition: all 0.1s linear;
+        @include media(979px) {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+        }
+        &.dots {
+            border-color: #fff;
+        }
+        &.prev {
+            border-color: #fff;
+        }
+        &.next {
+            border-color: #fff;
+        }
+        &.current {
+            background: #333;
+            border-color: #333;
+            color: #fff;
+        }
+    }
+    a.page-numbers:hover {
+        color: #000;
+        border-color: #000;
+    }
+}

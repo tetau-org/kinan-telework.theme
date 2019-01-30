@@ -1,0 +1,123 @@
+@charset "utf-8";
+@import "../core/mixin";
+@import "../base/_base_setting";
+
+/*-----------------------------------------------
+ __footer
+-----------------------------------------------*/
+
+.md_footer {
+    padding-bottom: 20px;
+}
+.md_footer__logo {
+    padding: 2vh 0 3vh 0;
+    .innr {
+        padding: 1em 0;
+        text-align: center;
+    }
+    .good {
+        display: inline-block;
+        box-sizing: border-box;
+        @include media(767px) {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+        @include media(540px) {
+            width: 40%;
+        }
+    }
+    .text {
+        display: inline-block;
+        box-sizing: border-box;
+        text-align: left;
+        @include media(767px) {
+            text-align: center;
+        }
+    }
+    .md_footer__produce {
+        padding: 0 1em;
+        @include media(767px) {
+            padding: 0;
+            padding-right: .5em;
+        }
+    }
+    .tetau {
+        @include media(767px) {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 25%;
+        }
+    }
+}
+.md_ft__contact {
+    text-align: center;
+    a {
+        margin-top: 1em;
+        text-decoration: none;
+        display: inline-block;
+        box-sizing: border-box;
+        white-space: nowrap;
+        line-height: 1;
+        padding : 1em 2em;
+        color: #fff;
+        background: #000;
+    }
+}
+.md_footer__wrap {
+    display: flex;
+    flex-direction: row;//水平垂直
+    flex-wrap: nowrap;
+    justify-content: center;//水平レイアウト
+    align-items: center;//垂直レイアウト
+    position: relative;
+    padding-top: 2em;
+}
+.md_foot__info {
+    a {
+        text-decoration: none;
+        color: $base_font__color;
+        white-space: nowrap;
+        padding: 0 1em 0 0;
+        &:last-child {
+            padding-right: 0;
+        }
+        &.icn {
+            margin: 0 .2em;
+            &:last-child {
+                padding-left: 1em;
+            }
+        }
+    }
+}
+.md_foot__copyright {
+    display: inline-block;
+    box-sizing: border-box;
+    color: #999;
+    white-space: nowrap;
+    padding-right: 1em;
+}
+.md_foot__btn {
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    @include media(600px) {
+        bottom: 1.5em;
+    }
+    .fa {
+        padding: 0;
+        font-size: 40px;
+    }
+    a {
+        display: block;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: $c1;
+    }
+}
+.md_foot__nav {
+}
+
+@import "_sidr.scss";

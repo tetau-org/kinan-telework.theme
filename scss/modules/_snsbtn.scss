@@ -1,0 +1,69 @@
+@charset "utf-8";
+@import "../core/mixin";
+@import "../base/_base_setting";
+
+.sns_section {
+    text-align: center;
+    .sns_wrap {
+        display: table;
+        margin: 0 auto;
+        @include media(420px) {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .snsbtn {
+            display: table-cell;
+            padding: 5px;
+            vertical-align: middle;
+            position: relative;
+            @include media(420px) {
+                table-layout: fixed;
+            }
+            &.count_mode {
+                @include media(420px) {
+                    display: none;
+                }
+            }
+            &.icon_mode {
+                min-width: 70px;
+                padding: 0;
+                height: 72px;
+                &.twitter {
+                    background: #00aced ;
+                }
+                &.facebook {
+                    background: #305097 ;
+                }
+                &.google {
+                    background: #db4a39 ;
+                }
+                &.line {
+                    background: #00C300 ;
+                }
+                .btn {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 11px;
+                }
+                .icn {
+                    font-size: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    display: inline-block;
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 0;
+                }
+                .txt {
+                    position: absolute;
+                    left: 0;
+                    bottom: 5px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    text-align: center;
+                }
+
+            }
+        }
+    }
+}

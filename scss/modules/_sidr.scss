@@ -1,0 +1,79 @@
+@charset "utf-8";
+@import "../core/mixin";
+@import "../base/_base_setting";
+
+/*-----------------------------------------------
+ __Drawer_menu
+-----------------------------------------------*/
+
+.md_drawer__cover {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(0,0,0,0.5);
+    z-index: 99;
+}
+.md_drawer__menu {
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+
+.sidr-inner {
+    overflow-y: auto;
+}
+#drawer {
+    display: none;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background: #f6f6f6;
+}
+
+.md_drawer__contents {}
+
+
+
+
+/*--------- sidr --------*/
+.sidr {
+    display: none;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    width: 90%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.sidr_slide__close {
+    position: fixed;
+    display: none;
+    top: 50%;
+    right: calc(90% - 32px);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #000;
+    font-size: 30px;
+    z-index: 999999;
+    text-align: center;
+    background: #f6f6f6;
+    transform: rotate(45deg);
+    transform-origin: center center;
+    border-radius: 5px;
+    cursor: pointer;
+    i {
+        transform: rotate(-45deg);
+    }
+}
+
+
+
+
+
+
+

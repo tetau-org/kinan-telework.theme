@@ -1,0 +1,32 @@
+@charset "utf-8";
+@import "core/_mixin";
+@import "base/_base_setting";
+@import "base/_font_setting";
+
+/*-----------------------------------------------
+ __site_common
+-----------------------------------------------*/
+
+.fa {padding-right: .5em;}
+.dnon {display: none;}
+
+.l_row {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+
+@import "modules/_header";
+@import "modules/_footer";
+@import "modules/_postEntry";
+@import "modules/_page";
+@import "modules/_post";
+@import "modules/_pagenav";
+@import "modules/_snsbtn";
+
+
+
+
