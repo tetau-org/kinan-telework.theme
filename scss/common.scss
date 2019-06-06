@@ -16,7 +16,9 @@
     margin: 0 auto;
     box-sizing: border-box;
 }
-
+.wrapper {
+    overflow: hidden;
+}
 
 
 @import "modules/_header";
